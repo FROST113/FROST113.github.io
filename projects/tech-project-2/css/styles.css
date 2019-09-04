@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Base Element Styles */
+
+
+h1,
+h2,
+h3,
+li {
+    font-family: 'oswald' , sans-serif;
+}
+
+p {
+    font-family: 'Roboto Slab' , serif;
+    color: rgb(82, 50, 50); 
+}
+
+a {
+    text-decoration: none;
+    color: #6B6B6F;
+     
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.main-nav a:hover,
+.FooterNav a:hover {
+    color: rgb(12, 159, 179);
+}
+
+
+.main-nav a:active,
+.FooterNav a:active {
+    color: rgb(185, 7, 7);
+}
+
+
+
+
+
+/* =======================================
+ Base Layout Styles (320px)
+ ========================================== */
+
+ /* Layout Containers */
+
+    body {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+ .container {
+     max-width: 320px;
+     width: 90%;
+     margin: 10px auto;
+     text-align: center;
+     padding-left: 1em;
+     padding-right: 1em;
+     
+ }
+
+ .name,
+ .main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+
+ }
+
+ .banner {
+    margin-bottom: 60px;
+    padding: 3.2em 0; 
+ }
+
+.banner,
+.main-footer {
+    text-align: center;
+    
+    
+}
+
+.headline {
+    margin-bottom: 60px;
+}
+
+.FooterName {
+    float: left;
+}
+
+.TopLink {
+    float: right;
+}
+
+.main-footer {
+    margin: 0 40px 10px 
+}
+
+img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.ContactPage,
+.skills {
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+.FooterNav {
+    display: none;
+}
+
+/* =======================================
+ 768px (Tablet) layout.
+ ========================================== */
+
+ @media (min-width: 768px) {
+    body {
+        max-width: 768px;
+        margin: 0 auto;
+    } 
+    
+    .container {
+         max-width: 90%;
+         margin: 0 auto;
+        }
+        
+        .name {
+            margin-top: 30px;
+        }
+
+     .main-nav {
+         text-align: center;
+     }
+
+     .main-nav li {
+         display: inline-block;
+         
+     }
+
+     .tag-line {
+         font-size: 1.4em 
+     }
+
+     .TopLink {
+         display: none;
+     }
+
+     .FooterNav {
+         display: inline-block;
+         float: right;
+     }
+     
+     .FooterNav li {
+         display: inline-block;
+         margin-left: 25px;
+         margin-top: 17px
+     }
+
+     .FooterName {
+         margin-bottom: 50px;
+     }
+
+     /* Col layout */
+
+     .banner {
+        margin-bottom: 250px; 
+     }
+
+     .banner-img {
+         float: right;
+         width: 40%;
+         padding-bottom: 50px;
+         padding-right: 2em;
+     }
+
+     .tag-line {
+         float: left;
+         width: 60%;
+         padding-left: 2em;
+         text-align: left;
+     }
+
+     
+     
+
+     .col .primary {
+         float: left;
+         margin-right: 1%; 
+     }
+
+     .col .secondary {
+         float: right;
+         margin-left: 1%;
+     }
+
+     .primary,
+     .secondary {
+         width: 49%;
+         padding-bottom: 60px;
+         
+         
+     }
+     
+     
+
+     /* .ContactPage {
+         padding-top: 40px
+     } */
+     
+     /* Float clearfix */
+     .clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}  
+    
+ }
+
+/* =======================================
+ 1024px (Desktop) layout.
+ ========================================== */
+
+ @media (min-width: 1024px) {
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    
+    .name {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+        padding: 30px 0px;
+    }
+
+    .headline {
+        padding-top: 40px;
+    }
+
+    .col {
+        display: inline-block;
+        margin: 0 auto;
+       
+        
+        
+    }
+
+    #left-1,
+    #left-2 {
+        width: 30%;
+        float: left;
+        
+    }
+
+    #middle-1,
+    #middle-2 {
+        width: 30%;
+        float: left;
+        margin: 0 35px;
+    }
+
+    #right-1,
+    #right-2 {
+        width: 30%;
+        float: right;
+        
+        
+    }
+
+    
+ }

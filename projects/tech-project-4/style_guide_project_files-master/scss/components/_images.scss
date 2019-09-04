@@ -1,0 +1,22 @@
+//================================
+// Image styles
+//================================
+.img--logo {
+    display: block;
+    margin: auto;
+    @include desktops {
+        margin-top: 30px;
+    }
+}
+
+.img--avatar {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.img--frame {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+}

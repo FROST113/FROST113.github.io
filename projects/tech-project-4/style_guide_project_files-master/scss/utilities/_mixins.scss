@@ -1,0 +1,25 @@
+// Media queries
+@mixin for-mobile-only {
+    @media (max-width: $break-mobile) {
+        @content;
+    }
+}
+
+@mixin desktops {
+    @media (min-width: $break-desk) {
+        @content;
+    }
+}
+
+// Flex container 
+
+@mixin flexy(
+    $disp: flex,
+    $dir: null,
+    $wrap: null,
+    $just: null) {
+        display: $disp;
+        flex-direction: $dir;
+        flex-wrap: $wrap;
+        justify-content: $just;
+}

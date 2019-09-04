@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>THE CODE REVIEW</title>
+</head>
+
+
+<body>
+    <div class="container">
+  <header>
+    <h2>THE CODE REVIEW</h2>
+    <h3>Signup for our newsletter</h3>
+    <p>Get the latest news on how your code is doing right in your inbox</p>
+  </header>
+  
+  
+  <form action="index.html" method="post">
+      <fieldset>
+          <legend><strong>Contact information</strong></legend>
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Full Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="user_name" placeholder="Required" required>
+        </div>
+
+        <div class="col-25">
+          <label for="mail">Email Address</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="mail" name="user_email" placeholder="Required" required>
+        </div>
+
+        <div class="col-25">
+          <label for="phone">Phone Number</label>
+        </div>
+        <div class="col-75">
+          <input type="tel" id="phone" name="user_telephone" placeholder="e.g. (555)-555-555 ">
+        </div>
+
+        <div class="col-25">
+          <label for="street">Street Address</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="street" name="user_address" placeholder="e.g. 22 Main Street">
+        </div>
+
+        <div class="col-25">
+          <label for="city">City</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="city" name="user_city" placeholder="e.g. Detroit">
+        </div>
+
+        <div class="col-25">
+          <label for="state">State</label><br>
+        </div>
+        <div class="col-75">
+          <select id="state" name="user_state">
+                <option value="" disabled selected hidden>Choose State</option>
+                <option value="alabama">Alabama</option>
+                <option value="alaska">Alaska</option>
+                <option value="arizona">Arizona</option>
+                <option value="arkansas">Arkansas</option>
+                <option value="california">California</option>
+                <option value="colorado">Colorado</option>
+                <option value="connecticut">Connecticut</option>
+                <option value="delaware">Delaware</option>
+                <option value="florida">Florida</option>
+                <option value="georgia">Georgia</option>
+                <option value="hawaii">Hawaii</option>
+                <option value="idaho">Idaho</option>
+                <option value="illinois">Illinois</option>
+                <option value="indiana">Indiana</option>
+                <option value="iowa">Iowa</option>
+                <option value="kansas">Kansas</option>
+                <option value="kentucky">Kentucky</option>
+                <option value="louisiana">Louisiana</option>
+                <option value="maine">Maine</option>
+                <option value="maryland">Maryland</option>
+                <option value="massachusetts">Massachusetts</option>
+                <option value="michigan">Michigan</option>
+                <option value="minnesota">Minnesota</option>
+                <option value="mississippi">Mississippi</option>
+                <option value="missouri">Missouri</option>
+                <option value="montana">Montana</option>
+                <option value="nebraska">Nebraska</option>
+                <option value="nevada">Nevada</option>
+                <option value="new-hampshire">New Hampshire</option>
+                <option value="new-jersey">New Jersey</option>
+                <option value="new-mexic">New Mexico</option>
+                <option value="new-york">New York</option>
+                <option value="north-carolina">North Carolina</option>
+                <option value=">north-dakota">North Dakota</option>
+                <option value="ohio">Ohio</option>
+                <option value="oklahoma">Oklahoma</option>
+                <option value="oregon">Oregon</option>
+                <option value="pennsylvania">Pennsylvania</option>
+                <option value="rhode Island">Rhode Island</option>
+                <option value="south-carolina">South Carolina</option>
+                <option value="south-dakota">South Dakota</option>
+                <option value="tennessee">Tennessee</option>
+                <option value="texas">Texas</option>
+                <option value="utah">Utah</option>
+                <option value="vermont">Vermont</option>
+                <option value="virginia">Virginia</option>
+                <option value="washington">Washington</option>
+                <option value="west-virginia">West Virginia</option>
+                <option value="wisconsin">Wisconsin</option>
+                <option value="wyoming">Wyoming</option>
+          </select><br>
+        </div>
+
+        <div class="col-25">
+          <label for="zip">Zip Code</label><br>
+        </div>
+        <div class="col-75">
+          <input type="text" id="zip" name="user_zip-code"  placeholder="e.g. 0123">
+        </div>
+        </div>
+      </fieldset>
+      <fieldset>
+          <legend class="NewsLetter"><strong>Newsletter</strong></legend>
+
+          <label>the newsletters you would like to recieve</label><br>
+          <input type="checkbox" id="html-news" value="news_letters" name="user_news-letters"><label for="html-news">HTML News</label><br>
+          <input type="checkbox" id="css-news" value="news_letters" name="user_news-letters"><label for="css-news">CSS News</label><br>
+          <input type="checkbox" id="javascript-news" value="news_letters" name="user_news-letters"><label for="javascript-news">Javascript News</label><br>
+
+          <label>Newsletter format</label><br>
+          <input type="radio" id="html-format" value="html-format" name="user_format"><label for="html-format">HTML</label><br>
+          <input type="radio" id="plain-format" value="plain-format" name="user_format"><label for="plain-format">Plain text</label><br>
+
+          <label for="request">Other topics you'd like to hear about</label>
+          <textarea id="request" name="user_request"></textarea>
+      </fieldset>
+
+      <button type="submit">Sign up</button>
+    
+  </form>
+
+  <footer>
+    <p><i>Copyright the Code Review</i></p>
+  </footer>
+</div>
+</body>
+</html>

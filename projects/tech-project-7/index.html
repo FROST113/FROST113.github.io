@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Techdegree-Project-7</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/toggle-switch-px.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="grid-container">
+
+    <!-- header -->
+<header class="header">
+    <h1 class="logo">Your<span>App&trade;</span></h1>
+
+    <!-- div containing the bell icon -->
+    <div class="main-wrapper">
+        
+        <svg version="1.1" id="Layer_1" width="30px" height="30px" class="bell-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+        <style type="text/css">
+            .st0{fill:#FFFFFF;}
+        </style>
+        <g id="_x36__6_">
+            <g>
+                <path class="bell" d="M24,18v-8c0-5.5-4.5-10-10-10S4,4.5,4,10v8l-4,8h9.1c0.5,2.3,2.5,4,4.9,4s4.4-1.7,4.9-4H28L24,18z M14,28
+                    c-1.3,0-2.4-0.8-2.8-2h5.6C16.4,27.2,15.3,28,14,28z M3,24l3-6v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8l3,6H3z"/>
+            </g>
+        </g>
+        </svg>
+        <div class="bell-circle"></div>
+        <div class="border"></div>
+        <img class="profile-img" src="images/member-5.jpg" alt="User profile image">
+        <h3>Josh Sulivan</h3>
+    </div>
+</header>
+ 
+ <nav class="main-nav">
+        <a>
+            <img src="icons/icon-dashboard.svg" alt="Dashboard icon">
+        </a>
+        <a>
+            <img src="icons/icon-members.svg" alt="Members icon">
+        </a>
+        <a>
+            <img src="icons/icon-visits.svg" alt="Visits icon">
+        </a>
+        <a>
+            <img src="icons/icon-settings.svg" alt="Settings icon">
+        </a>
+ </nav>
+ 
+ <main class="main">
+    <section class="row-1">
+    <div class="main-header">
+        <h2 class="headline">Dashboard</h2>
+        <div class="main-header-search">
+            <input class="search" type="search" placeholder="Search...">
+        </div>
+     </div>
+
+     <div class="alert" id="alert">
+        <!-- JS will insert alert here -->
+     </div>
+    </section> 
+
+
+     <!-- line graph charts -->
+     <section class="traffic">
+        <div class="traffic-header">
+            <h3>Traffic</h3>
+            <ul class="traffic-nav">
+                <li class="traffic-nav-link">Hourly</li>
+                <li class="traffic-nav-link">Daily</li>
+                <li class="traffic-nav-link-active">Weekly</li>
+                <li class="traffic-nav-link">Monthly</li>
+            </ul>
+        </div>
+        <div class="widget-container-full">
+            <!-- element line graph will attach to -->
+            <canvas id="traffic-chart"></canvas>
+        </div>
+        
+     </section>
+
+     
+     <!-- bar graph -->
+     <section class="daily-traffic">
+         <h3>Daily traffic</h3>
+
+         <div class="widget-container-half">
+             <!-- element bar graph will attach to -->
+             <canvas id="daily-chart"></canvas>
+         </div>
+     </section>
+
+     <section class="mobile-users">
+        <h3>Mobile users</h3>
+
+        <div class="widget-container-half">
+            <!-- element bar graph will attach to -->
+            <canvas id="doughnut-chart"></canvas>
+        </div>
+     </section>
+    
+
+    
+    <section class="social">
+    <div class="social-title">
+        <h5>Social Stats</h5>
+    </div>
+    
+    <div class="social-wrapper">
+        <div class="social-container">
+            <div class="twitter-image">
+                                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" class="social-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                <path fill="white" d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
+                    c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
+                    c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
+                    c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,3,10.1,3c12.1,0,18.7-10,18.7-18.7
+                    c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z"/>
+                </svg>
+            </div>
+            <div class="twitter-text">
+                <span>Twitter</span>
+                <p>10,345</p>
+            </div>
+        </div>
+
+        <div class="social-container">
+            <div class="facebook-image">
+                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" class="social-svg" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="white" d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+            </div>
+            <div class="facebook-text">
+                <span>Facebook</span>
+                <p>8,739</p>
+            </div>
+        </div>
+
+        <div class="social-container">
+            <div class="google-image">
+                                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" class="social-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                    <path fill="white" d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
+                        c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
+                        c-0.3-0.2-0.5-0.4-0.6-0.4c-0.2,0-0.5,0-1,0c-0.7,0-1.4,0-2,0.1c-0.7,0.1-1.4,0.2-2.1,0.5c-0.7,0.2-1.3,0.5-1.9,0.9s-1,0.8-1.3,1.4
+                        c-0.3,0.6-0.5,1.3-0.5,2.1c0,0.9,0.2,1.7,0.7,2.3c0.5,0.7,1.1,1.2,1.8,1.6s1.5,0.7,2.3,0.9s1.6,0.3,2.4,0.3c0.8,0,1.5-0.1,2.2-0.2
+                        c0.7-0.2,1.3-0.4,1.9-0.8c0.6-0.3,1.1-0.8,1.4-1.4C17.5,27.2,17.7,26.5,17.7,25.7z M15.4,9.1c0-0.8-0.1-1.6-0.3-2.5
+                        c-0.2-0.9-0.5-1.7-0.9-2.5c-0.4-0.8-0.9-1.5-1.6-2c-0.7-0.5-1.5-0.8-2.3-0.8c-1.2,0-2.1,0.4-2.8,1.3c-0.7,0.9-1,1.9-1,3.2
+                        c0,0.6,0.1,1.2,0.2,1.9c0.1,0.7,0.4,1.3,0.7,2c0.3,0.7,0.7,1.3,1.1,1.8c0.4,0.5,0.9,1,1.5,1.3c0.6,0.3,1.2,0.5,1.9,0.5
+                        c1.2,0,2.1-0.4,2.7-1.2C15.1,11.4,15.4,10.4,15.4,9.1z M12.9,0h8.4l-2.6,1.5h-2.6c0.9,0.6,1.6,1.4,2.1,2.4s0.8,2.1,0.8,3.2
+                        c0,0.9-0.1,1.8-0.4,2.5c-0.3,0.7-0.7,1.3-1.1,1.8c-0.4,0.4-0.8,0.9-1.3,1.2c-0.4,0.4-0.8,0.8-1.1,1.2c-0.3,0.4-0.4,0.8-0.4,1.3
+                        c0,0.3,0.1,0.7,0.3,1c0.2,0.3,0.5,0.6,0.8,0.9c0.3,0.3,0.7,0.6,1.1,0.9c0.4,0.3,0.8,0.7,1.2,1.1c0.4,0.4,0.8,0.8,1.1,1.3
+                        c0.3,0.5,0.6,1,0.8,1.6c0.2,0.6,0.3,1.3,0.3,2c0,2.1-0.9,3.9-2.7,5.4c-1.9,1.7-4.6,2.5-8.1,2.5c-0.8,0-1.5-0.1-2.3-0.2
+                        c-0.8-0.1-1.6-0.3-2.3-0.6c-0.8-0.3-1.5-0.7-2.1-1.1c-0.6-0.4-1.1-1-1.5-1.7C1,27.6,0.8,26.9,0.8,26c0-0.8,0.2-1.6,0.7-2.6
+                        c0.4-0.8,1-1.5,1.8-2.1c0.8-0.6,1.8-1.1,2.8-1.4c1-0.3,2-0.5,3-0.7c0.9-0.1,1.9-0.2,2.9-0.3c-0.8-1.1-1.2-2-1.2-2.9
+                        c0-0.2,0-0.3,0-0.5c0-0.1,0.1-0.3,0.1-0.4c0-0.1,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.3,0.1-0.4c-0.5,0.1-1,0.1-1.3,0.1
+                        c-1.9,0-3.5-0.6-4.9-1.9c-1.4-1.3-2-2.8-2-4.7c0-1.8,0.6-3.4,1.8-4.8C6,1.7,7.5,0.8,9.3,0.4C10.5,0.1,11.7,0,12.9,0z M32.8,4.9v2.5
+                        h-4.9v4.9h-2.5V7.4h-4.9V4.9h4.9V0h2.5v4.9H32.8z"/>
+                    </svg>
+            </div>
+            <div class="google-text">
+                <span>Google+</span>
+                <p>2,530</p>
+            </div>
+        </div>
+    </div>
+ </section>
+
+    <!-- new member widget -->
+    <section class="members">
+        <h3>New Members</h3>
+
+        <div class="members-container">
+            <img src="images/member-1.jpg" class="profile-img" alt="User Profile Image">
+            <div class="member-text">
+                <p>Victoria Chambers</p>
+                <a href="#">victoria.chambers80@example.com</a>
+            </div>
+            <p class="date">10/15/15</p>
+        </div>
+
+        <div class="members-container">
+            <img src="images/member-2.jpg" class="profile-img" alt="User Profile Image">
+            <div class="member-text">
+                <p>Dale Bryd</p>
+                <a href="#">dale.bryd52@example.com</a>
+            </div>
+            <p class="date">10/15/15</p>
+        </div>
+
+        <div class="members-container">
+            <img src="images/member-3.jpg" class="profile-img" alt="User Profile Image">
+            <div class="member-text">
+                <p>Dawn Wood</p>
+                <a href="#">dawn.wood16@example.com</a>
+            </div>
+            <p class="date">10/15/15</p>
+        </div>
+
+        <div class="members-container">
+            <img src="images/member-4.jpg" class="profile-img" alt="User Profile Image">
+            <div class="member-text">
+                <p>Dan Oliver</p>
+                <a href="#">dan.oliver82@example.com</a>
+            </div>
+            <p class="date">10/15/15</p>
+        </div>
+    </section>
+
+    <!-- members activity widget -->
+    <section class="members-recent">
+        <h3>Recent Activity</h3>
+
+        <div class="members-container">
+            <img src="images/member-1.jpg" class="profile-img" alt="User Profile Image">
+            <div class="member-text">
+                <p class="recent-text">Victoria Chambers commented on YourApp's SOE Tips</p>
+                <p class="recent-text">4 hours ago</p>
+            </div>
+        </div>
+
+        <div class="members-container">
+                <img src="images/member-2.jpg" class="profile-img" alt="User Profile Image">
+                <div class="member-text">
+                    <p class="recent-text">Dale Byrd liked the post Facebook's Changes for 2016</p>
+                    <p class="recent-text">5 hours ago</p>
+                </div>
+            </div>
+
+        <div class="members-container">
+                <img src="images/member-3.jpg" class="profile-img" alt="User Profile Image">
+                <div class="member-text">
+                    <p class="recent-text">Dawn Wood commented on Facbooks's Changes for 2016</p>
+                    <p class="recent-text">5 hours ago</p>
+                </div>
+            </div>
+        <div class="members-container">
+                <img src="images/member-4.jpg" class="profile-img" alt="User Profile Image">
+                <div class="member-text">
+                    <p class="recent-text">Dan Oliver posted YourApp's SOE Tips</p>
+                    <p class="recent-text">1 day ago</p>
+                </div>
+            </div>             
+    </section>
+
+    <!-- messaging widget -->
+    <section class="message">
+        <h3>Message users</h3>
+
+        <form class="widget-container">
+            <input type="text" placeholder="Search for user" class="form-field" id="userField">
+            <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+            <button class="button-primary" id="send">Send</button>
+        </form>
+    </section>
+
+    <!-- local settings widget -->
+    <section class="settings">
+        <h3>Settings</h3>
+
+        <div class="adjust-settings">
+        <label class="switch-light switch-ios" onclick="">
+            <input type="checkbox">
+          
+            <strong class="toggle-msg">
+              Send Email Notifications
+            </strong>
+          
+            <span class="toggle-btn">
+              <span>Off</span>
+              <span>On</span>
+              <a></a>
+            </span>
+          </label>
+        </div><br>
+
+          <div class="adjust-settings">
+          <label class="switch-light switch-ios" onclick="">
+            <input type="checkbox">
+          
+            <strong class="toggle-msg">
+             Set Profile to Public
+            </strong>
+          
+            <span class="toggle-btn">
+              <span>Off</span>
+              <span>On</span>
+              <a></a>
+            </span>
+          </label>
+        </div><br>
+
+          <select class="form-field" id="timezone">
+            <option disabled selected>Select a Timezone</option>
+            <option>Eastern</option>
+            <option>Western</option>
+          </select>
+          <div class="settings-button">
+              <button class="button-secondary" id="save">Save</button>
+              <button class="button-disabled" id="cancel">Cancel</button>
+          </div>
+    </section>
+
+ </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>   
+    <script src="js/app.js"></script>
+</body>
+</html>

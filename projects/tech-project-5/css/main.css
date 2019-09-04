@@ -1,0 +1,66 @@
+/** Base styles for mobile  **/
+
+.container {
+    display: block;
+    max-width: 360px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.search-bar  {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    
+}
+.search-bar input {
+    padding: 7px;
+    width: 90%;
+    border: 2px lightgrey solid;
+    border-radius: 3%;
+}
+
+.gallery img {
+    padding-bottom: 40px;
+}
+
+/* Meduim screen display */
+
+@media (min-width: 768px) {
+    .container{
+        max-width: 768px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .search-bar  {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 2em;
+    }
+    .search-bar input {
+        padding: 7px;
+        width: 50%;
+        border: 2px lightgrey solid;
+        border-radius: 3%;
+    }
+    .gallery img {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+/* Large screen display */
+
+@media (min-width: 1024px) {
+    .container{
+        max-width: 1024px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+

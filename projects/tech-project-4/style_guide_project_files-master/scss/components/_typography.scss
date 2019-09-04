@@ -1,0 +1,39 @@
+//===========================
+// Typo styles
+//===========================
+.container {
+    width: 85%;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    max-width: 768px;
+    
+    .headline--primary {
+        line-height: 1em;
+        margin-left: 15px;
+        color: $color-primary;
+    }
+    .link {
+        text-decoration: none;
+        color: $color-primary;
+        font-weight: bold;
+    }
+    .blockquote {
+       font-weight: bold;
+       font-size: 20px;
+       border-left: solid 5px $color-primary;
+       padding-left: 12px;
+       @include desktops {
+           font-size: 23px;
+       }
+    }
+    .headline--secondary{
+     margin-top: 30px;
+     margin-bottom: 20px;   
+    }
+    @include desktops {
+        width: 85%;
+        max-width: 1400px;
+        font-size: 19px
+    }
+}

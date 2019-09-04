@@ -1,0 +1,30 @@
+// ======================================
+//  Base Styles
+// ======================================
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+   list-style: none;
+   padding-left: 0; 
+}
+
+body {
+    color: $color-text;
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: $font-stack-primary;
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: $font-stack-secondary;
+}
+
+p {
+    margin-bottom: 1.25em;
+    
+}

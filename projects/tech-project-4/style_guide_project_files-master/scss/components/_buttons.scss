@@ -1,0 +1,105 @@
+//==========================
+// Button styles
+//==========================
+form .btn--default.theme__colors {
+  margin-top: 15px;
+    width: 100%;
+    color: $white;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.75em 1.5em;
+    border-radius: 0.35em;
+    transition: opacity 0.3s;
+    &:hover {
+      color: $white;
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: initial;
+    }
+  }
+
+
+%btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $white;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.75em 1.5em;
+    border-radius: 0.35em;
+    transition: opacity 0.3s;
+    &:hover {
+      color: $white;
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: initial;
+    }
+  }
+  
+  .btn {
+    
+
+    &--default {
+      @extend %btn;
+      background-color: $color-primary;
+      border: 2px solid $color-primary;
+      font-size: 0.85em;
+      @include desktops {
+        float: left;
+        width: 18%;
+        margin-right: 2%;
+      }
+    }
+    &--success {
+      @extend %btn;
+      font-size: 0.85em;
+      background-color: #3CB371;
+      border: 2px solid #3CB371;
+      @include desktops {
+        float: left;
+        width: 18%;
+        margin-right: 2%;
+      } 
+    }
+    &--error {
+        @extend %btn;
+        font-size: 0.85em;
+        background-color: #DB7093;
+        border: 2px solid #DB7093;
+        @include desktops {
+          float: left;
+          width: 18%;
+          margin-right: 2%;
+        } 
+      }
+      &--warning {
+        @extend %btn;
+        font-size: 0.85em;
+        background-color: #FF6347;
+        border: 2px solid #FF6347;
+        @include desktops {
+          float: left;
+          width: 18%;
+          margin-right: 2%;
+        } 
+      }
+      &--info {
+        @extend %btn;
+        font-size: 0.85em;
+        background-color: #9370DB;
+        border: 2px solid #9370DB;
+        @include desktops {
+          float: left;
+          width: 18%
+        } 
+      }
+     
+  }
+
+ 
